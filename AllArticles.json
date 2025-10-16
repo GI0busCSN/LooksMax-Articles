@@ -1,7 +1,79 @@
 {
-  "article": {
-    "id": 0,
-    "title": "TestOne",
-    "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/TestArticle.json"
-  }
+  "article": [
+    {
+      "id": 0,
+      "title": "gymmaxxing",
+      "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/gymmaxxing.json",
+      "images": [
+        {
+          "src": "path/to/gymmaxxing-img1.jpg",
+          "alt": "Gym workout example"
+        },
+        {
+          "src": "path/to/gymmaxxing-img2.jpg",
+          "alt": "Before and after gym transformation"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "skincaremaxxing",
+      "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/skincaremaxxing.json",
+      "images": [
+        {
+          "src": "path/to/skincare-img1.jpg",
+          "alt": "Skincare routine products"
+        },
+        {
+          "src": "path/to/skincare-img2.jpg",
+          "alt": "Skin improvement results"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "stylemaxxing",
+      "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/stylemaxxing.json",
+      "images": [
+        {
+          "src": "path/to/style-img1.jpg",
+          "alt": "Fashion outfit ideas"
+        },
+        {
+          "src": "path/to/style-img2.jpg",
+          "alt": "Grooming tips illustration"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "mewing",
+      "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/mewing.json",
+      "images": [
+        {
+          "src": "path/to/mewing-img1.jpg",
+          "alt": "Mewing technique diagram"
+        },
+        {
+          "src": "path/to/mewing-img2.jpg",
+          "alt": "Jawline before and after"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "surgerymaxxing",
+      "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/surgerymaxxing.json",
+      "images": [
+        {
+          "src": "path/to/surgery-img1.jpg",
+          "alt": "Common aesthetic procedures"
+        },
+        {
+          "src": "path/to/surgery-img2.jpg",
+          "alt": "Recovery tips infographic"
+        }
+      ]
+    }
+  ]
 }
