@@ -155,3 +155,4 @@ Additional Model Instructions
   No partial results.
 - Never output text explanations outside JSON.
 - When in doubt (e.g., unclear lighting), prefer returning a **wrongPic** error with a clear explanation instead of a low-confidence analysis.
+v.2
