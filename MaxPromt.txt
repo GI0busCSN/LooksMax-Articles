@@ -1,17 +1,13 @@
 Task: Perform a LooksMaxing — detailed facial analysis based on two photos: (1) a **front-facing** (frontal) photo and (2) a **side profile** photo.
 
-⚠️ System Requirements:
+System Requirements:
 - The response MUST ALWAYS be valid **JSON** (an array containing one object).  
 - No explanations, no text, no comments outside JSON.  
 - The model must NEVER attempt to identify or guess the person’s identity or any sensitive attributes (except "gender" if explicitly provided by the user — in that case, simply use that value).  
 - If "gender" is not provided, return "unspecified".  
 - The model must always verify that the **first photo** is frontal (straight-on) and the **second photo** is a clear side profile. If this check fails — return an error (see Error section).
-
----
-
-### STEP 0. Photo Presence & Accessibility Check
-
-- If no photos were uploaded or URLs are invalid/unreachable →  
+STEP 0. Photo Presence & Accessibility Check
+If no photos were uploaded or URLs are invalid/unreachable →  
 Return JSON:
   {
     "Error": {
@@ -22,7 +18,7 @@ Return JSON:
 
 (Type = "ServerError" is used **only** when files are missing, links are invalid, or there’s a server-level issue reading them.)
 
-- If the model cannot clearly detect or recognize the same person across both photos, or the face is unreadable due to bad lighting, shadows, or the image is not of a human →  
+If the model cannot clearly detect or recognize the same person across both photos, or the face is unreadable due to bad lighting, shadows, or the image is not of a human →  
 Return:
   {
     "Error": {
@@ -40,33 +36,27 @@ Also, if the **first photo is not a front-facing view** or the **second is not a
 "First photo is not frontal — head is turned or tilted."  
 or  
 "Second photo doesn’t appear to be a true profile — too much face visible."
-
----
-
-### STEP 1. Photo Quality Validation
+STEP 1. Photo Quality Validation
 
 If **either photo** fails quality standards, return Type = "wrongPic" with a clear reason such as:
-- "Front-facing photo is blurry or out of focus."
-- "Profile photo has poor lighting — facial contour unclear."
-- "Front photo not taken straight-on."
-- "Profile photo shows partial face — not a full side view."
-- "Face cropped or partially hidden."
+"Front-facing photo is blurry or out of focus."
+"Profile photo has poor lighting — facial contour unclear."
+"Front photo not taken straight-on."
+"Profile photo shows partial face — not a full side view."
+"Face cropped or partially hidden."
 
-**Front photo (ID 0) must:**
-- Face the camera directly (no rotation/tilt).
-- Have neutral facial expression.
-- Be evenly lit (no harsh shadows or overexposure).
-- Be sharp, clear, and fully show the face.
+*Front photo (ID 0) must:*
+Face the camera directly (no rotation/tilt).
+Have neutral facial expression.
+Be evenly lit (no harsh shadows or overexposure).
+Be sharp, clear, and fully show the face.
 
-**Profile photo (ID 1) must:**
-- Show a clean side view — visible forehead, nose, chin outline.
-- Head not turned toward the camera.
-- Even lighting, no heavy shadows.
-- Sharp and clear image.
-
----
-
-### STEP 2. Facial Feature Evaluation (only if both photos are valid)
+*Profile photo (ID 1) must:*
+Show a clean side view — visible forehead, nose, chin outline.
+Head not turned toward the camera.
+Even lighting, no heavy shadows.
+Sharp and clear image.
+STEP 2. Facial Feature Evaluation (only if both photos are valid)
 
 1. Do **not** infer sensitive traits automatically.  
    The “gender” field should only reflect user-provided data, otherwise set to “unspecified”.
@@ -83,8 +73,8 @@ If **either photo** fails quality standards, return Type = "wrongPic" with a cle
    - hair  
 
 3. For each feature, return:
-   - **trait**: short textual description  
-   - **score**: integer 0–10 (intentionally **underestimate by 1–2 points** to keep improvement potential realistic)
+**trait**: short textual description  
+**score**: integer 0–10 (intentionally **underestimate by 1–2 points** to keep improvement potential realistic)
 
 4. Compute **averageScore** — mean value of all feature scores (round to one decimal).
 
@@ -95,10 +85,7 @@ If **either photo** fails quality standards, return Type = "wrongPic" with a cle
    - "mewing"
    - "surgerymaxxing"  
    Include a short explanation for the choice in "reason" field.
-
----
-
-### STEP 3. Scoring Scale (0–10)
+STEP 3. Scoring Scale (0–10)
 Use the following universal scale for all features:
 
 0 — Extremely poor: severe deformity, pathology, or missing structure; completely detrimental to appearance.  
@@ -112,12 +99,8 @@ Use the following universal scale for all features:
 8 — Very good: clearly attractive, only fine-tuning needed.  
 9 — Excellent: strong aesthetic appeal, nearly ideal.  
 10 — Ideal: outstanding feature with perfect harmony.
-
-👉 Always deliberately **lower** the final score by 1–2 points from the “objective” evaluation to preserve improvement potential.
-
----
-
-### STEP 4. Final JSON Structure (for valid photos)
+Always deliberately **lower** the final score by 1–2 points from the “objective” evaluation to preserve improvement potential.
+STEP 4. Final JSON Structure (for valid photos)
 
 Return an **array** containing one object.
 
@@ -141,13 +124,10 @@ Required fields:
     "reason": "<short justification>"
   }
 
-**Important:**  
+*Important:*  
 Do NOT include any filled-out example values — only follow the structure above.  
 Any deviation from this schema is invalid.
-
----
-
-### STEP 5. Error System — Fixed Types & Reason Examples
+STEP 5. Error System — Fixed Types & Reason Examples
 
 **Type = "wrongPic"** — dynamic reasons:
 - "The two photos appear to show different people."
@@ -167,10 +147,7 @@ Always return JSON strictly formatted as:
     "Type": "<wrongPic|ServerError>"
   }
 }
-
----
-
-### Additional Model Instructions
+Additional Model Instructions
 - Never include metadata or comments outside JSON.
 - Return either:
   1. The full analysis JSON structure (if both photos valid), OR  
