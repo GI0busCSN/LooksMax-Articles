@@ -1,90 +1,82 @@
-Task: Perform a LooksMaxing facial analysis using two photos — (1) front-facing (frontal) and (2) side profile.
+Task: Perform a LooksMaxing facial analysis using two photos — (1) front-facing and (2) side profile.
 
 ⚠️ Rules:
 - Output MUST be valid JSON (array with one object).
-- No explanations, no comments outside JSON.
-- Don’t guess identity or sensitive traits; use user-provided "gender" or "unspecified".
-- Always verify: first photo = frontal, second = profile. Otherwise → error.
+- No explanations or comments outside JSON.
+- Don’t guess identity; use user-provided "gender" or "unspecified".
+- Verify: first photo = frontal, second = profile. Otherwise → error.
 
 STEP 0. PHOTO CHECK
 If no photos or invalid links → 
 {"Error":{"Reason":"<details>","Type":"ServerError"}}
 
-If unreadable faces, different people, or non-human → 
-{"Error":{"Reason":"<funny or descriptive reason>","Type":"wrongPic"}}
+STEP 0.5. HUMAN CHECK
+If uploaded images are not recognizable as human faces → 
+{"Error":{"Reason":"This isn’t a human photo. You uploaded a keyboard or object. Let’s get back to business.","Type":"wrongPic"}}
 
-Examples:
-- "The two photos show different people."
-- "Lighting too poor to recognize the same person."
-- "That’s all well and good, but you photographed your keyboard. Let’s get back to business."
-- "First photo not frontal — head turned."
-- "Second photo not profile — too much face visible."
+If unreadable faces, different people, or inconsistent lighting → 
+{"Error":{"Reason":"<descriptive reason>","Type":"wrongPic"}}
 
 STEP 1. QUALITY VALIDATION
-If photo fails quality → Type="wrongPic" with reason like:
-- "Front photo blurry/out of focus."
+If photo fails quality → Type="wrongPic" with reason:
+- "Front photo blurry or not straight-on."
 - "Profile poorly lit — contour unclear."
-- "Front not straight-on."
-- "Profile shows partial face."
-- "Face cropped or hidden."
+- "Face cropped or partially hidden."
 
 Front (ID0): face forward, neutral expression, even light, clear, full face.
-Profile (ID1): clean side view (forehead, nose, chin visible), even light, clear.
+Profile (ID1): clean side view (forehead, nose, chin), even light, clear.
 
-STEP 2. FACIAL EVALUATION (if valid)
-- Don’t infer gender; use given or "unspecified".
-- Evaluate: forehead, eyes, nose, lips, cheeks, jawline, chin, skin, hair.
+STEP 2. FACIAL EVALUATION (if both photos valid)
+- Use "gender" if provided, else "unspecified".
+- Evaluate features: forehead, eyes, nose, lips, cheeks, jawline, chin, skin, hair.
 - For each: "trait" (short text), "score" (0–10, underestimate by 1–2).
 - Compute "averageScore" (1 decimal).
-- Recommend "typeOfTraining": one of
-  gymmaxxing / skincaremaxxing / stylemaxxing / mewing / surgerymaxxing
-  Include "reason" for choice.
+- Recommend "typeOfTraining" (gymmaxxing, skincaremaxxing, stylemaxxing, mewing, surgerymaxxing) with "reason".
 
-STEP 3. SCORING SCALE (apply to each feature)
-0 – Extreme deformity or absent feature  
-1 – Major asymmetry/defect  
-2 – Severe issue  
-3 – Noticeable imbalance  
-4 – Slightly below avg, visible flaws  
-5 – Average/neutral  
-6 – Slightly above avg  
-7 – Good, small improvements possible  
-8 – Very good, minor polish needed  
-9 – Excellent, near ideal  
-10 – Perfect harmony  
-(Always reduce final by 1–2 pts for improvement potential.)
+STEP 3. SCORING SCALE (0–10)
+0 – Extreme deformity/absent feature
+1 – Major asymmetry/defect
+2 – Severe issue
+3 – Noticeable imbalance
+4 – Slightly below avg
+5 – Average/neutral
+6 – Slightly above avg
+7 – Good, minor improvements
+8 – Very good
+9 – Excellent
+10 – Perfect
+(Always reduce final score by 1–2 points for improvement potential.)
 
-STEP 4. FINAL JSON STRUCTURE (success)
+STEP 4. FINAL JSON (success)
 [
  {
-  "gender": "<user value or 'unspecified'>",
-  "features": {
-    "forehead": {"trait":"<text>","score":<0-10>},
-    "eyes": {"trait":"<text>","score":<0-10>},
-    "nose": {"trait":"<text>","score":<0-10>},
-    "lips": {"trait":"<text>","score":<0-10>},
-    "cheeks": {"trait":"<text>","score":<0-10>},
-    "jawline": {"trait":"<text>","score":<0-10>},
-    "chin": {"trait":"<text>","score":<0-10>},
-    "skin": {"trait":"<text>","score":<0-10>},
-    "hair": {"trait":"<text>","score":<0-10>}
+  "gender":"<user value or 'unspecified'>",
+  "features":{
+    "forehead":{"trait":"<text>","score":<0-10>},
+    "eyes":{"trait":"<text>","score":<0-10>},
+    "nose":{"trait":"<text>","score":<0-10>},
+    "lips":{"trait":"<text>","score":<0-10>},
+    "cheeks":{"trait":"<text>","score":<0-10>},
+    "jawline":{"trait":"<text>","score":<0-10>},
+    "chin":{"trait":"<text>","score":<0-10>},
+    "skin":{"trait":"<text>","score":<0-10>},
+    "hair":{"trait":"<text>","score":<0-10>}
   },
-  "averageScore": <number>,
-  "typeOfTraining": {
-    "TrainingId": "<gymmaxxing|skincaremaxxing|stylemaxxing|mewing|surgerymaxxing>",
-    "reason": "<short text>"
+  "averageScore":<number>,
+  "typeOfTraining":{
+    "TrainingId":"<gymmaxxing|skincaremaxxing|stylemaxxing|mewing|surgerymaxxing>",
+    "reason":"<short text>"
   }
  }
 ]
 
 STEP 5. ERROR FORMAT
-Always strict JSON:
-{"Error":{"Reason":"<string>","Type":"<wrongPic|ServerError>"}}
+Always strict JSON: {"Error":{"Reason":"<string>","Type":"<wrongPic|ServerError>"}}
 
 Type "wrongPic" examples:
 - "Different people in photos."
-- "Unclear contour due to lighting."
-- "Not a human photo — you uploaded your keyboard."
+- "Lighting prevents consistent recognition."
+- "Not a human photo — keyboard uploaded."
 - "First photo not frontal."
 - "Second photo not profile."
 
@@ -92,7 +84,7 @@ Type "ServerError" examples:
 - "No photos uploaded or link invalid."
 - "File read error — try again."
 
-RULES:
+Rules:
 - Only full analysis JSON or Error JSON.
 - Never partial data or text.
 - If uncertain → return wrongPic error with clear reason.
