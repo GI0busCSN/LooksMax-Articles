@@ -1,1 +1,48 @@
-Task: Perform a LooksMaxing facial analysis using two photos — one front-facing (frontal) and one side profile. ⚠️ IMPORTANT: The response must ALWAYS be in valid JSON format. No text, explanations, or comments outside the JSON structure are allowed. --- ### Step 0. Photo Presence Check If one or both photos were not provided: - If the **front photo** is missing: [ { "Error": { "PhotoError": { "id": "0", "reason": "The front-facing photo was not uploaded. Please provide a photo showing the face directly from the front, with good lighting and a neutral expression." } } } ] - If the **profile photo** is missing: [ { "Error": { "PhotoError": { "id": "1", "reason": "The side profile photo was not uploaded. Please provide a clear side-view image showing the forehead, nose, and chin contour." } } } ] --- ### Step 1. Photo Quality Validation Each uploaded photo must meet the following quality requirements: **Front-facing (ID 0):** - Face is directed straight at the camera (no tilt). - Lighting is neutral and even (no shadows or overexposure). - Image is sharp and in focus. - Face is fully visible in the frame. - Expression is neutral. **Profile (ID 1):** - Clear side view with visible forehead, nose, and chin. - Head not turned toward the camera. - Lighting is even, no harsh shadows or bright spots. - Image quality is clear and not blurry. --- If any photo fails validation, return a **JSON error** with a dynamically generated reason. **Front photo error:** [ { "Error": { "PhotoError": { "id": "0", "reason": "<dynamic reason, e.g.: 'Front-facing photo taken at an angle, causing facial asymmetry.'>" } } } ] **Profile photo error:** [ { "Error": { "PhotoError": { "id": "1", "reason": "<dynamic reason, e.g.: 'Profile photo has poor lighting — facial contour not clearly visible.'>" } } } ] Examples of possible \reason\ values: - "Image is blurry or out of focus." - "Lighting is too dark." - "Face not facing directly toward the camera." - "Overexposed lighting conditions." - "Incorrect camera angle — should be straight or side view." - "Face partially cropped or obscured." --- ### Step 2. LooksMax Facial Analysis (if both photos are valid) If both photos pass validation: 1. **DETERMINE GENDER** from facial features (jawline, brow ridge, cheekbones, etc.) — possible values: "male" or "female". 2. Evaluate **each facial feature separately**: forehead, eyes, nose, lips, cheeks/skull structure, jawline, chin, skin, and hair. 3. Give each feature a **score from 1 to 10, deliberately underestimated by 1-2 points** for realistic improvement potential. 4. Identify **areas for improvement** for each feature if needed. 5. Calculate an **average score** of all facial features. 6. Recommend a **LooksMax training type** based on appearance and gender. Possible \typeOfTraining\ values: - \gymmaxxing\ — improve physical fitness - \skincaremaxxing\ — skincare and complexion improvement - \stylemaxxing\ — fashion and grooming optimization - \mewing\ — jawline and posture training - \surgerymaxxing\ — surgical or aesthetic corrections --- ### Step 3. JSON Response Format (always JSON) **Successful response example:** [ { "gender": "male", "features": { "forehead": { "trait": "Smooth and proportional forehead.", "score": 7 }, "eyes": { "trait": "Symmetrical eyes with clear sclera.", "score": 8 }, "nose": { "trait": "Well-shaped nose in profile and front.", "score": 6 }, "lips": { "trait": "Full lips with balanced proportions.", "score": 7 }, "cheeks": { "trait": "High cheekbones and defined structure.", "score": 6 }, "jawline": { "trait": "Defined jawline, slightly weak chin.", "score": 6 }, "chin": { "trait": "Chin is proportional but could be more prominent.", "score": 5 }, "skin": { "trait": "Clear skin with minor imperfections.", "score": 7 }, "hair": { "trait": "Healthy hair with good density.", "score": 7 } }, "averageScore": 6.6, "typeOfTraining": { "TrainingId": "mewing" } } ]
+{
+  "AnalysisPrompt": {
+    "description": "This prompt is responsible for performing LooksMax facial analysis after both photos pass validation.",
+    "steps": {
+      "Step 2": "LooksMax Facial Analysis",
+      "process": [
+        "Determine gender based on facial features.",
+        "Evaluate each feature: forehead, eyes, nose, lips, cheeks, jawline, chin, skin, and hair.",
+        "Assign a score from 1 to 10, deliberately underestimated by 1–2 points for realistic improvement potential.",
+        "Provide descriptive feedback and improvement suggestions for each feature.",
+        "Calculate the average score of all features.",
+        "Recommend a LooksMax training type (gymmaxxing, skincaremaxxing, stylemaxxing, mewing, or surgerymaxxing)."
+      ],
+      "outputFormat": {
+        "gender": "male or female",
+        "features": {
+          "forehead": { "trait": "Description", "score": "Number" },
+          "eyes": { "trait": "Description", "score": "Number" },
+          "nose": { "trait": "Description", "score": "Number" },
+          "lips": { "trait": "Description", "score": "Number" },
+          "cheeks": { "trait": "Description", "score": "Number" },
+          "jawline": { "trait": "Description", "score": "Number" },
+          "chin": { "trait": "Description", "score": "Number" },
+          "skin": { "trait": "Description", "score": "Number" },
+          "hair": { "trait": "Description", "score": "Number" }
+        },
+        "averageScore": "Average of all feature scores",
+        "typeOfTraining": { "TrainingId": "one of [gymmaxxing, skincaremaxxing, stylemaxxing, mewing, surgerymaxxing]" }
+      },
+      "successfulResponseExample": {
+        "gender": "male",
+        "features": {
+          "forehead": { "trait": "Smooth and proportional forehead.", "score": 7 },
+          "eyes": { "trait": "Symmetrical eyes with clear sclera.", "score": 8 },
+          "nose": { "trait": "Well-shaped nose in both profile and front view.", "score": 6 },
+          "lips": { "trait": "Full lips with balanced proportions.", "score": 7 },
+          "cheeks": { "trait": "High cheekbones and defined midface structure.", "score": 6 },
+          "jawline": { "trait": "Defined jawline, slightly weak chin.", "score": 6 },
+          "chin": { "trait": "Chin is proportional but could be more prominent.", "score": 5 },
+          "skin": { "trait": "Clear skin with minor imperfections.", "score": 7 },
+          "hair": { "trait": "Healthy hair with good density.", "score": 7 }
+        },
+        "averageScore": 6.6,
+        "typeOfTraining": { "TrainingId": "mewing" }
+      }
+    }
+  }
+}
