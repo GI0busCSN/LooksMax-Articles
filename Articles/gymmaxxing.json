@@ -61,8 +61,14 @@
   },
   {
     "links": [
-      { "href": "https://example.com", "text": "Example" },
-      { "href": "https://vuejs.org", "text": "Vue.js Docs" }
+      {
+        "href": "https://example.com",
+        "text": "Example"
+      },
+      {
+        "href": "https://vuejs.org",
+        "text": "Vue.js Docs"
+      }
     ]
   }
 ]
