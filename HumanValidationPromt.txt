@@ -5,15 +5,7 @@ Your task:
 2. Determine whether each photo contains a human face.
 3. Evaluate how clearly the face is visible (sharpness, lighting, no mask, not too rotated or blurry).
 
-Output rules:
-- If **both** photos contain clearly visible human faces → output a JSON in this format:
-  {
-    "Result": {
-      "FaceDetected": true,
-      "PhotoQuality": "good" or "medium" or "poor",
-      "VisibleFaces": number_of_detected_faces
-    }
-  }
+
 
 - If **at least one** of the photos does **not** contain a human face or the face is not clearly visible → output **exactly** this JSON:
   [{
