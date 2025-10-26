@@ -1,1 +1,50 @@
-
+{
+  "ValidationPrompt": {
+    "description": "This prompt is responsible for validating the uploaded photos before facial analysis.",
+    "steps": {
+      "Step 0": "Photo Presence Check",
+      "rules": {
+        "frontPhotoMissing": {
+          "id": "0",
+          "reason": "The front-facing photo was not uploaded. Please provide a photo showing the face directly from the front, with good lighting and a neutral expression."
+        },
+        "profilePhotoMissing": {
+          "id": "1",
+          "reason": "The side profile photo was not uploaded. Please provide a clear side-view image showing the forehead, nose, and chin contour."
+        }
+      },
+      "Step 1": "Photo Quality Validation",
+      "frontPhotoRequirements": [
+        "Face directed straight at the camera (no tilt)",
+        "Neutral and even lighting (no shadows or overexposure)",
+        "Image is sharp and in focus",
+        "Face fully visible in the frame",
+        "Neutral facial expression"
+      ],
+      "profilePhotoRequirements": [
+        "Clear side view with visible forehead, nose, and chin",
+        "Head not turned toward the camera",
+        "Even lighting without harsh shadows or bright spots",
+        "Image clear and not blurry"
+      ],
+      "errorFormat": {
+        "frontPhotoError": {
+          "id": "0",
+          "reason": "<dynamic reason>"
+        },
+        "profilePhotoError": {
+          "id": "1",
+          "reason": "<dynamic reason>"
+        }
+      },
+      "exampleReasons": [
+        "Image is blurry or out of focus.",
+        "Lighting is too dark.",
+        "Face not facing directly toward the camera.",
+        "Overexposed lighting conditions.",
+        "Incorrect camera angle — should be straight or side view.",
+        "Face partially cropped or obscured."
+      ]
+    }
+  }
+}
