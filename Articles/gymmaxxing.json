@@ -18,7 +18,11 @@
       },
       {
         "description": "Gymmaxxing requires discipline and a long-term commitment, but the results enhance not only appearance but also overall health."
-      },
+      }
+    ]
+  },
+  {
+    "text": [
       {
         "header": "Types of Workouts for Gymmaxxing"
       },
@@ -40,7 +44,11 @@
       },
       {
         "description": "For progress, use progressive overload, increasing weights or repetitions weekly. Nutrition (250–500 calories above maintenance) and sleep (7–9 hours) are critical. Avoid overtraining by monitoring fatigue."
-      },
+      }
+    ]
+  },
+  {
+    "text": [
       {
         "list": [
           {
@@ -56,11 +64,13 @@
             "text": "Cardio: 2–3 sessions per week (HIIT for 20–30 minutes or low-intensity for 30–45 minutes) to manage fat."
           }
         ]
-      },
-      {
-        "description": "The application is not responsible for any consequences related to the use of the provided information. It is recommended to consult a qualified trainer or doctor before starting workouts or changing your diet, especially if you have medical conditions."
       }
     ]
+  },
+  {
+    "text": {
+        "description": "The application is not responsible for any consequences related to the use of the provided information. It is recommended to consult a qualified trainer or doctor before starting workouts or changing your diet, especially if you have medical conditions."
+      }
   },
   {
     "links": [
