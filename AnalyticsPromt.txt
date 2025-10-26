@@ -46,7 +46,7 @@ SurgeryMaxxing	"surgerymaxxing"	Surgical or aesthetic corrections (e.g., rhinopl
 Output Format (Always JSON)
 [
   {
-    "gender": "male",
+    "gender": "...",
     "features": {
       "forehead": { "trait": ""...", "score": "1-10", "improvement": ""..." },
       "eyes": { "trait": ""...", "score": "1-10", "improvement": ""..." },
