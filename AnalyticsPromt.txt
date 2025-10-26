@@ -48,17 +48,17 @@ Output Format (Always JSON)
   {
     "gender": "male",
     "features": {
-      "forehead": { "trait": "Balanced forehead with smooth contour.", "score": 7, "improvement": "Slight brightening could enhance proportion." },
-      "eyes": { "trait": "Symmetrical eyes with good spacing.", "score": 8, "improvement": "Mild under-eye darkness could be treated with skincare." },
-      "nose": { "trait": "Straight nose with moderate projection.", "score": 7, "improvement": "Tip refinement could improve profile harmony." },
-      "lips": { "trait": "Full lips with balanced proportions.", "score": 7, "improvement": "Regular hydration can improve definition." },
-      "cheeks": { "trait": "Moderately defined cheekbones.", "score": 6, "improvement": "Slight fat loss or mewing may enhance structure." },
-      "jawline": { "trait": "Defined jawline with soft angles.", "score": 6, "improvement": "Lower body fat or posture training recommended." },
-      "chin": { "trait": "Proportionate but slightly recessed chin.", "score": 5, "improvement": "Mewing or filler can improve projection." },
-      "skin": { "trait": "Clear skin with minor texture.", "score": 7, "improvement": "Hydration and exfoliation can optimize tone." },
-      "hair": { "trait": "Healthy, dense hair.", "score": 7, "improvement": "Maintain grooming routine." }
+      "forehead": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "eyes": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "nose": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "lips": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "cheeks": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "jawline": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "chin": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "skin": { "trait": ""...", "score": "1-10", "improvement": ""..." },
+      "hair": { "trait": ""...", "score": "1-10", "improvement": ""..." }
     },
-    "averageScore": 6.7,
-    "typeOfTraining": { "TrainingId": "mewing" }
+    "averageScore": "1-10",
+    "typeOfTraining": { "TrainingId": "..." }
   }
 ]
