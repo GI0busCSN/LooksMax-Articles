@@ -11,19 +11,23 @@
         "header": "Skincaremaxxing"
       },
       {
-        "description": "Skincaremaxxing is the practice of maximizing skin health and appearance through targeted routines, products, and lifestyle habits, often as part of the broader looksmaxxing community focused on enhancing overall attractiveness. This approach emphasizes cleansing, hydration, protection, and treatment to achieve clear, even-toned, youthful skin, combining daily regimens with nutrition and sun avoidance."
+        "description": "Skincaremaxxing is the practice of optimizing skin health and appearance through targeted skincare routines, products, and lifestyle habits, often as part of the looksmaxxing community focused on enhancing overall attractiveness. It emphasizes cleansing, hydration, protection, and treatments to achieve clear, even-toned, youthful skin."
       },
       {
-        "description": "Key points: Establish a consistent routine tailored to your skin type (normal, dry, oily, combination, sensitive), incorporate sunscreen daily, focus on gentle products, and maintain a balanced diet with hydration. Beginners should start simple to avoid irritation and consult a dermatologist for persistent issues like acne."
+        "description": "Key points: Develop a consistent routine tailored to your skin type (normal, dry, oily, combination, sensitive), use sunscreen daily, prioritize gentle products, and support skin health with a balanced diet and hydration. Beginners should start with simple steps to avoid irritation and consult a dermatologist for issues like acne or rosacea."
       },
       {
-        "description": "Skincaremaxxing demands patience and consistency, as results can take weeks to months, but it significantly boosts confidence and skin quality when done right."
+        "description": "Skincaremaxxing requires patience and consistency, as visible improvements may take weeks to months, but it significantly boosts confidence and skin quality when done correctly."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Types of Skincare Routines"
       },
       {
-        "header": "Types of Routines for Skincaremaxxing"
-      },
-      {
-        "description": "Skincaremaxxing routines vary by skin type and goals, including basic daily care for maintenance, targeted treatments for acne or aging, and advanced glass skin regimens for radiance. Core elements include cleansing, toning, treating, moisturizing, and protecting, adapted for morning (AM) and evening (PM) use."
+        "description": "Skincaremaxxing routines vary by skin type and goals, including basic daily care for maintenance, targeted treatments for specific concerns (e.g., acne, aging), and advanced 'glass skin' regimens for radiant, flawless skin. Core steps include cleansing, toning, treating, moisturizing, and protecting, adapted for morning (AM) and evening (PM) routines."
       }
     ]
   },
@@ -33,34 +37,40 @@
         "header": "Basic Routine, Targeted Treatments, and Lifestyle Tips"
       },
       {
-        "description": "Basic routines focus on cleansing (gentle foam or oil-based, AM/PM), moisturizing (hydrating creams with hyaluronic acid), and sunscreen (SPF 30+ mineral-based, AM). For acne-prone skin, incorporate benzoyl peroxide or salicylic acid (start low strength, PM). Advanced glass skin adds essences, serums (niacinamide, vitamin C), and exfoliation (AHA/BHA 1-2x/week, PM)."
+        "description": "Basic routines involve cleansing (gentle foam or oil-based, AM/PM), moisturizing (creams with hyaluronic acid), and sunscreen (SPF 30+ mineral-based, AM). For acne-prone skin, use benzoyl peroxide or salicylic acid (low strength, PM). Advanced routines may include essences, serums (niacinamide, vitamin C), and exfoliation (AHA/BHA 1–2 times per week, PM)."
       },
       {
-        "description": "Order of application: AM - cleanser, toner/essence, serum, moisturizer, eye cream, SPF; PM - double cleanse, toner/essence, treatment (retinoids last), moisturizer, eye cream. Combine with nutrition (veggies, probiotics for gut-skin axis) and habits (7-9 hours sleep, stress management)."
+        "description": "Order of application: AM - cleanser, toner/essence, serum, moisturizer, eye cream, SPF; PM - double cleanse, toner/essence, treatment (retinoids last), moisturizer, eye cream. Combine with lifestyle habits like balanced nutrition (rich in vegetables and probiotics) and adequate sleep (7–9 hours)."
       },
       {
-        "description": "For progress, patch-test new products, exfoliate sparingly to avoid barrier damage, and track changes over 4-12 weeks. Nutrition supports skin via balanced meals avoiding excess sugar/sodium; microbiome health via pre/probiotics enhances results."
-      },
+        "description": "For progress, patch-test new products, limit exfoliation to avoid skin barrier damage, and track improvements over 4–12 weeks. Nutrition supports skin health by avoiding excess sugar and sodium, while pre/probiotics enhance the gut-skin axis for better results."
+      }
+    ]
+  },
+  {
+    "text": [
       {
         "list": [
           {
             "icon": "🧼",
-            "text": "Basic Cleansing: Gentle, paraben-free cleanser (e.g., CeraVe or Sulwhasoo) twice daily to remove dirt without stripping oils."
+            "text": "Cleansing: Use a gentle, paraben-free cleanser (e.g., CeraVe or Sulwhasoo) twice daily to remove dirt without stripping natural oils."
           },
           {
             "icon": "💧",
-            "text": "Hydration & Treatment: Hyaluronic acid serum and niacinamide for moisture and oil control, applied after toning."
+            "text": "Hydration & Treatment: Apply hyaluronic acid serum and niacinamide after toning for moisture and oil control."
           },
           {
             "icon": "☀️",
-            "text": "Protection: Broad-spectrum SPF 50+ (e.g., Purito Centella) every morning, reapplied as needed, to prevent UV damage."
+            "text": "Protection: Use broad-spectrum SPF 50+ (e.g., Purito Centella) every morning, reapplying as needed to prevent UV damage."
           }
         ]
-      },
-      {
-        "description": "The application is not responsible for any consequences related to the use of the provided information. It is recommended to consult a qualified dermatologist or healthcare professional before starting new routines or products, especially if you have sensitive skin or medical conditions."
       }
     ]
+  },
+  {
+    "text": {
+        "description": "The application is not responsible for any consequences related to the use of the provided information. It is recommended to consult a qualified dermatologist or healthcare professional before starting new skincare routines or products, especially if you have sensitive skin or medical conditions."
+      }
   },
   {
     "links": [
