@@ -48,15 +48,15 @@ Output Format (Always JSON)
   {
     "gender": "...",
     "features": {
-      "forehead": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "eyes": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "nose": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "lips": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "cheeks": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "jawline": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "chin": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "skin": { "trait": ""...", "score": "1-10", "improvement": ""..." },
-      "hair": { "trait": ""...", "score": "1-10", "improvement": ""..." }
+      "forehead": { "emoji": "🤕", "trait": "", "score": "1-10", "improvement": "" },
+      "eyes": { "emoji": "👁️", "trait": "", "score": "1-10", "improvement": "" },
+      "nose": { "emoji": "👃", "trait": "", "score": "1-10", "improvement": "" },
+      "lips": { "emoji": "👄", "trait": "", "score": "1-10", "improvement": "" },
+      "cheeks": { "emoji": "😊", "trait": "", "score": "1-10", "improvement": "" },
+      "jawline": { "emoji": "🦴", "trait": "", "score": "1-10", "improvement": "" },
+      "chin": { "emoji": "🧔", "trait": "", "score": "1-10", "improvement": "" },
+      "skin": { "emoji": "🧴", "trait": "", "score": "1-10", "improvement": "" },
+      "hair": { "emoji": "💇", "trait": "", "score": "1-10", "improvement": "" }
     },
     "averageScore": "1-10",
     "typeOfTraining": { "TrainingId": "..." }
