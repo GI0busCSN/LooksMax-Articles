@@ -30,7 +30,7 @@
     {
       "id": 3,
       "title": "mewing",
-      "URL": "https://github.com/GI0busCSN/LooksMax-Articles/blob/main/mewing.json",
+      "URL": "https://raw.githubusercontent.com/GI0busCSN/LooksMax-Articles/refs/heads/main/Articles/mewing.json",
       "images": {
           "src": "path/to/mewing-img1.jpg",
           "alt": "Mewing technique diagram"
