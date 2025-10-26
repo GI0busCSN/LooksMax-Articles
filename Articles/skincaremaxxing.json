@@ -1,1 +1,97 @@
-
+[
+  {
+    "info": {
+      "title": "Skincaremaxxing",
+      "img": "https://members.believeperform.com/wp-content/uploads/2019/09/Fotolia_55910119_Subscription_Monthly_M-10.jpg"
+    }
+  },
+  {
+    "text": [
+      {
+        "header": "Skincaremaxxing"
+      },
+      {
+        "description": "Skincaremaxxing is the practice of maximizing skin health and appearance through targeted routines, products, and lifestyle habits, often as part of the broader looksmaxxing community focused on enhancing overall attractiveness. This approach emphasizes cleansing, hydration, protection, and treatment to achieve clear, even-toned, youthful skin, combining daily regimens with nutrition and sun avoidance."
+      },
+      {
+        "description": "Key points: Establish a consistent routine tailored to your skin type (normal, dry, oily, combination, sensitive), incorporate sunscreen daily, focus on gentle products, and maintain a balanced diet with hydration. Beginners should start simple to avoid irritation and consult a dermatologist for persistent issues like acne."
+      },
+      {
+        "description": "Skincaremaxxing demands patience and consistency, as results can take weeks to months, but it significantly boosts confidence and skin quality when done right."
+      },
+      {
+        "header": "Types of Routines for Skincaremaxxing"
+      },
+      {
+        "description": "Skincaremaxxing routines vary by skin type and goals, including basic daily care for maintenance, targeted treatments for acne or aging, and advanced glass skin regimens for radiance. Core elements include cleansing, toning, treating, moisturizing, and protecting, adapted for morning (AM) and evening (PM) use."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Basic Routine, Targeted Treatments, and Lifestyle Tips"
+      },
+      {
+        "description": "Basic routines focus on cleansing (gentle foam or oil-based, AM/PM), moisturizing (hydrating creams with hyaluronic acid), and sunscreen (SPF 30+ mineral-based, AM). For acne-prone skin, incorporate benzoyl peroxide or salicylic acid (start low strength, PM). Advanced glass skin adds essences, serums (niacinamide, vitamin C), and exfoliation (AHA/BHA 1-2x/week, PM)."
+      },
+      {
+        "description": "Order of application: AM - cleanser, toner/essence, serum, moisturizer, eye cream, SPF; PM - double cleanse, toner/essence, treatment (retinoids last), moisturizer, eye cream. Combine with nutrition (veggies, probiotics for gut-skin axis) and habits (7-9 hours sleep, stress management)."
+      },
+      {
+        "description": "For progress, patch-test new products, exfoliate sparingly to avoid barrier damage, and track changes over 4-12 weeks. Nutrition supports skin via balanced meals avoiding excess sugar/sodium; microbiome health via pre/probiotics enhances results."
+      },
+      {
+        "list": [
+          {
+            "icon": "🧼",
+            "text": "Basic Cleansing: Gentle, paraben-free cleanser (e.g., CeraVe or Sulwhasoo) twice daily to remove dirt without stripping oils."
+          },
+          {
+            "icon": "💧",
+            "text": "Hydration & Treatment: Hyaluronic acid serum and niacinamide for moisture and oil control, applied after toning."
+          },
+          {
+            "icon": "☀️",
+            "text": "Protection: Broad-spectrum SPF 50+ (e.g., Purito Centella) every morning, reapplied as needed, to prevent UV damage."
+          }
+        ]
+      },
+      {
+        "description": "The application is not responsible for any consequences related to the use of the provided information. It is recommended to consult a qualified dermatologist or healthcare professional before starting new routines or products, especially if you have sensitive skin or medical conditions."
+      }
+    ]
+  },
+  {
+    "links": [
+      {
+        "href": "https://looksmax.org/threads/skin-looksmaxxing-guide-how-to-achieve-perfect-skin.512254/",
+        "text": "Skin Looksmaxxing Guide on Looksmax.org"
+      },
+      {
+        "href": "https://looksmax.org/threads/complete-skin-care-guide-approved-by-sephoramaxxing-sexual-deviants.911737/",
+        "text": "Complete Skin Care Guide on Looksmax.org"
+      },
+      {
+        "href": "https://looksmax.org/threads/basic-skincare-guide-for-beginners.893243/",
+        "text": "Basic Skincare Guide for Beginners on Looksmax.org"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=VoA2EScZToE",
+        "text": "YouTube: How to Get Perfect Skin | Looksmaxxing Guide"
+      },
+      {
+        "href": "https://looksmax.org/threads/guide-on-achieving-model-tier-skin.430153/",
+        "text": "Guide on Achieving Model Tier Skin on Looksmax.org"
+      },
+      {
+        "href": "https://www.healthline.com/health/beauty-skin-care/order-of-skin-care",
+        "text": "Healthline: Order of Skin Care Routine"
+      },
+      {
+        "href": "https://www.vogue.com/article/best-skincare-routines",
+        "text": "Vogue: Best Skincare Routines for Every Skin Type"
+      }
+    ]
+  }
+]
