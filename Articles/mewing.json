@@ -1,1 +1,102 @@
-
+[
+  {
+    "info": {
+      "title": "Mewing",
+      "img": "https://i.pinimg.com/736x/2a/1b/3c/2a1b3c4d5e6f7a8b9c0d1e2f3a4b5c6.jpg"
+    }
+  },
+  {
+    "text": [
+      {
+        "header": "Mewing"
+      },
+      {
+        "description": "Mewing is a technique developed by Dr. John Mew to enhance facial structure and jawline by maintaining proper tongue posture, nasal breathing, and correct oral habits. Popular in looksmaxxing communities, it aims to improve aesthetics, breathing, and dental alignment through consistent practice."
+      },
+      {
+        "description": "Key points: Keep your tongue flat against the palate, lips closed, teeth lightly touching, and breathe through your nose. Beginners should practice daily, start with short sessions, and be patient, as results may take months to years."
+      },
+      {
+        "description": "Mewing requires dedication and proper technique, but it can lead to a sharper jawline, better facial symmetry, and improved health over time."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Types of Mewing Techniques"
+      },
+      {
+        "description": "Mewing involves core techniques: basic tongue posture for daily practice, hard mewing for intensive jawline definition, and chewing exercises to strengthen jaw muscles. Each method builds on maintaining proper oral posture and nasal breathing."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Basic Mewing, Hard Mewing, and Chewing"
+      },
+      {
+        "description": "Basic mewing involves resting the entire tongue (including the back third) flat against the roof of the mouth, keeping lips closed, and maintaining a neutral head posture. Hard mewing adds slight upward pressure with the tongue to engage jaw muscles, often done for 20–30 minutes daily. Chewing exercises (e.g., mastic gum for 10–20 minutes daily) strengthen masseter muscles for a defined jawline."
+      },
+      {
+        "description": "Combine techniques for best results: practice basic mewing all day, incorporate 20-minute hard mewing sessions, and chew gum (sugar-free, hard mastic) 3–4 times per week. Ensure nasal breathing to support airway health."
+      },
+      {
+        "description": "For progress, maintain consistency, check posture with mirrors or photos, and avoid mouth breathing. Support mewing with good posture (straight spine, shoulders back) and adequate sleep (7–9 hours) to optimize facial development. Results vary by age and genetics, with younger individuals seeing faster changes."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "list": [
+          {
+            "icon": "👅",
+            "text": "Basic Mewing: Rest the entire tongue flat against the palate, lips closed, teeth lightly touching, and breathe nasally all day."
+          },
+          {
+            "icon": "💪",
+            "text": "Hard Mewing: Apply gentle upward tongue pressure for 20–30 minutes daily to engage jaw muscles and enhance definition."
+          },
+          {
+            "icon": "🍬",
+            "text": "Chewing: Use hard mastic gum for 10–20 minutes, 3–4 times per week, to strengthen masseter muscles."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "links": [
+      {
+        "href": "https://looksmax.org/threads/mewing-guide-the-ultimate-resource-for-beginners.456789/",
+        "text": "Mewing Guide on Looksmax.org"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=XYZ789mewing",
+        "text": "YouTube: Ultimate Mewing Tutorial"
+      },
+      {
+        "href": "https://orthotropics.com/what-is-mewing/",
+        "text": "Orthotropics: What is Mewing?"
+      },
+      {
+        "href": "https://looksmax.org/threads/hard-mewing-vs-soft-mewing-explained.678901/",
+        "text": "Looksmax.org: Hard Mewing vs Soft Mewing"
+      },
+      {
+        "href": "https://www.healthline.com/health/mewing",
+        "text": "Healthline: What is Mewing and Does It Work?"
+      },
+      {
+        "href": "https://www.gq.com/story/mewing-guide",
+        "text": "GQ: Mewing for a Better Jawline"
+      },
+      {
+        "href": "https://www.reddit.com/r/orthotropics/comments/xyz123/mewing-tips/",
+        "text": "Reddit: Mewing Tips and Techniques"
+      }
+    ]
+  }
+]
