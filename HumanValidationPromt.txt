@@ -11,7 +11,7 @@ Your task:
   [{
     "Error": {
       "PhotoError": {
-        "reason": "No human face detected. Please upload a photo containing a clear human face."
+        "reason": "<Reason...>"
       }
     }
   }]
