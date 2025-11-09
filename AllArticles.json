@@ -14,7 +14,7 @@
       "title": "skincaremaxxing",
       "URL": "https://raw.githubusercontent.com/GI0busCSN/LooksMax-Articles/refs/heads/main/Articles/skincaremaxxing.json",
       "images": {
-          "src": "path/to/skincare-img1.jpg",
+          "src": "https://i.pinimg.com/736x/ff/c8/71/ffc871f9fbf3f56620b25298f99c3005.jpg",
           "alt": "Skincare routine products"
         }
     },
@@ -23,7 +23,7 @@
       "title": "stylemaxxing",
       "URL": "https://raw.githubusercontent.com/GI0busCSN/LooksMax-Articles/refs/heads/main/Articles/stylemaxxing.json",
       "images": {
-          "src": "path/to/style-img1.jpg",
+          "src": "https://i.pinimg.com/736x/ff/c8/71/ffc871f9fbf3f56620b25298f99c3005.jpg",
           "alt": "Fashion outfit ideas"
         }
     },
