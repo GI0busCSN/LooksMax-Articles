@@ -18,7 +18,7 @@
         "header": "Data Processing and Photos"
       },
       {
-        "description": "When you upload a photo to Looksmaxing AI, it is processed securely on our servers for analysis purposes. All uploaded photos are stored temporarily and automatically deleted within 5 minutes after processing. No photos or user data are permanently stored or shared with third parties."
+        "description": "When you upload a photo to Looksmaxing AI, it is processed securely on our servers and sent to OpenAI for AI-based analysis. All uploaded photos are stored temporarily and automatically deleted within 5 minutes after processing. OpenAI may temporarily process this data to generate analysis results, but no photos or personal data are permanently stored or shared with any third parties outside OpenAI."
       }
     ]
   },
@@ -28,7 +28,7 @@
         "header": "Purpose of Use"
       },
       {
-        "description": "The app analyzes visual data to generate AI-based feedback and recommendations. Results are provided solely for personal use and entertainment purposes."
+        "description": "The app analyzes visual and textual data using OpenAI's artificial intelligence models to generate personalized feedback and recommendations. Results are provided solely for personal use and entertainment purposes."
       }
     ]
   },
@@ -38,7 +38,17 @@
         "header": "Privacy and Security"
       },
       {
-        "description": "All data transfers are encrypted, and we do not collect, sell, or share any personal information with external services. We take user privacy seriously and ensure all temporary data is deleted promptly."
+        "description": "All data transfers are encrypted. Photos and text data are sent securely to OpenAI for processing under their privacy and security standards. We do not collect, sell, or share any personal information with other third parties. All temporary data is automatically deleted from our servers within 5 minutes."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "OpenAI Data Policy"
+      },
+      {
+        "description": "Uploaded data is processed by OpenAI in accordance with their Privacy Policy. Please review OpenAI's official policy here: [OpenAI Privacy Policy](https://openai.com/policies/privacy-policy)."
       }
     ]
   },
@@ -48,7 +58,7 @@
         "header": "User Responsibility"
       },
       {
-        "description": "By using the app, you confirm that you are the owner of the photos you upload or have permission to use them. You agree not to upload illegal, harmful, or offensive content."
+        "description": "By using the app, you confirm that you are the owner of the photos you upload or have permission to use them. You agree not to upload illegal, harmful, or offensive content. You also acknowledge that data is sent to OpenAI for processing."
       }
     ]
   },
@@ -58,7 +68,7 @@
         "header": "Disclaimer"
       },
       {
-        "description": "Looksmaxing AI provides aesthetic analysis using artificial intelligence. The results are subjective and should not be considered medical or professional advice. We are not responsible for decisions made based on the app’s feedback."
+        "description": "Looksmaxing AI provides aesthetic analysis using artificial intelligence. The results are generated algorithmically and are subjective. They should not be considered medical or professional advice. We are not responsible for any actions taken based on the app’s feedback."
       }
     ]
   },
@@ -68,7 +78,15 @@
         "header": "Changes to Terms"
       },
       {
-        "description": "We may update these Terms of Use from time to time. Updates will take effect once published within the app."
+        "description": "We may update these Terms of Use from time to time. Updates will take effect once published within the app. Continued use of the app after changes means you accept the new terms."
+      }
+    ]
+  },
+  {
+    "links": [
+      {
+        "href": "https://openai.com/policies/privacy-policy",
+        "text": "OpenAI Privacy Policy"
       }
     ]
   }
