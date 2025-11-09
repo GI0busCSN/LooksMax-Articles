@@ -1,0 +1,68 @@
+[
+  {
+    "info": {
+      "title": "Terms of Use – Looksmaxing AI",
+      "img": "https://cdn-icons-png.flaticon.com/512/942/942799.png"
+    }
+  },
+  {
+    "text": [
+      {
+        "header": "Data Processing and Photos"
+      },
+      {
+        "description": "When you upload a photo to Looksmaxing AI, it is processed securely on our servers for analysis purposes. All uploaded photos are stored temporarily and automatically deleted within 5 minutes after processing. No photos or user data are permanently stored or shared with third parties."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Purpose of Use"
+      },
+      {
+        "description": "The app analyzes visual data to generate AI-based feedback and recommendations. Results are provided solely for personal use and entertainment purposes."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Privacy and Security"
+      },
+      {
+        "description": "All data transfers are encrypted, and we do not collect, sell, or share any personal information with external services. We take user privacy seriously and ensure all temporary data is deleted promptly."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "User Responsibility"
+      },
+      {
+        "description": "By using the app, you confirm that you are the owner of the photos you upload or have permission to use them. You agree not to upload illegal, harmful, or offensive content."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Disclaimer"
+      },
+      {
+        "description": "Looksmaxing AI provides aesthetic analysis using artificial intelligence. The results are subjective and should not be considered medical or professional advice. We are not responsible for decisions made based on the app’s feedback."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
+        "header": "Changes to Terms"
+      },
+      {
+        "description": "We may update these Terms of Use from time to time. Updates will take effect once published within the app."
+      }
+    ]
+  }
+]
