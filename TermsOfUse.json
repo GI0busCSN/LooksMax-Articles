@@ -18,7 +18,7 @@
         "header": "Data Processing and Photos"
       },
       {
-        "description": "When you upload a photo to Looksmaxing AI, it is processed securely and sent to OpenAI for AI-based analysis. Photos are temporarily stored on the imgbb cloud and automatically deleted within 5 minutes after processing. No photos or personal data are permanently stored on our servers, and data is not shared with third parties outside of OpenAI."
+        "description": "When you upload a photo to Looksmaxing AI, it is processed securely and sent to OpenAI for AI‑based analysis. Photos are temporarily stored on the ImgBB cloud and automatically deleted within 5 minutes after processing. No photos or personal data are permanently stored on our servers, and data is not shared with third parties outside of OpenAI."
       }
     ]
   },
@@ -38,7 +38,7 @@
         "header": "Privacy and Security"
       },
       {
-        "description": "All data transfers are encrypted. Photos and text data are sent securely to OpenAI for processing under their privacy and security standards. Temporary photo storage occurs on imgbb cloud servers for a maximum of 5 minutes. We do not collect, sell, or share personal information with other third parties."
+        "description": "All data transfers are encrypted. Photos and text data are sent securely to OpenAI for processing under their privacy and security standards. Temporary photo storage occurs on the ImgBB cloud servers for a maximum of 5 minutes. We do not collect, sell, or share personal information with other third parties."
       }
     ]
   },
@@ -55,10 +55,20 @@
   {
     "text": [
       {
+        "header": "ImgBB Data Policy"
+      },
+      {
+        "description": "The temporary storage of photos is handled by ImgBB under their Privacy Policy. Please review ImgBB's policy here: [ImgBB Privacy Policy](https://imgbb.com/privacy)."
+      }
+    ]
+  },
+  {
+    "text": [
+      {
         "header": "User Responsibility"
       },
       {
-        "description": "By using the app, you confirm that you are the owner of the photos you upload or have permission to use them. You agree not to upload illegal, harmful, or offensive content. You also acknowledge that data is sent to OpenAI for processing and temporarily stored on imgbb cloud."
+        "description": "By using the app, you confirm that you are the owner of the photos you upload or have permission to use them. You agree not to upload illegal, harmful, or offensive content. You also acknowledge that data is sent to OpenAI for processing and temporarily stored on ImgBB cloud."
       }
     ]
   },
@@ -87,6 +97,10 @@
       {
         "href": "https://openai.com/policies/privacy-policy",
         "text": "OpenAI Privacy Policy"
+      },
+      {
+        "href": "https://imgbb.com/privacy",
+        "text": "ImgBB Privacy Policy"
       }
     ]
   }
